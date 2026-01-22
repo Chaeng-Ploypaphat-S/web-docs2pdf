@@ -6,9 +6,25 @@
 
 <h1>Convert Word to PDF</h1>
 <p>Upload your Word document and get a PDF instantly.</p>
-<div class="file-upload">
-    <input type="file" id="fileInput" />
-    <label for="fileInput">Choose File</label>
-    <div class="helper-text">Max file size 50MB</div>
-</div>
-<a href="#" class="button">Convert to PDF</a>
+
+<form method="post" enctype="multipart/form-data" class="upload-form">
+    <div class="file-upload">
+        <input type="file" id="fileInput" name="UploadedFile" accept=".doc,.docx" />
+        <label for="fileInput">Choose File</label>
+    </div>
+    <p>Max file size 50MB</p>
+    <button type="submit" class="convert-button" id="convertFile">Convert to PDF</button>
+</form>
+
+<script>
+    const input = document.getElementById('fileInput');
+    const label = input.nextElementSibling;
+
+    input.addEventListener('change', () => {
+        if (input.files.length > 0) {
+            label.textContent = "File: " + input.files[0].name;
+        } else {
+            label.textContent = "Choose File";
+        }
+    });
+</script>

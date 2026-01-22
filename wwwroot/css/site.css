@@ -47,7 +47,27 @@ p {
 }
 
 .button:hover {
-    background-color: #ff3b1a;
+    background-color: #fa7f6a;
+    transform: translateY(-2px);
+}
+
+.convert-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fa593c; /* soft orange/red */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.convert-button:hover {
+    background: #FA593C;
+    background: linear-gradient(45deg,rgba(250, 89, 60, 1) 50%, rgba(250, 117, 93, 1) 100%);
     transform: translateY(-2px);
 }
 
