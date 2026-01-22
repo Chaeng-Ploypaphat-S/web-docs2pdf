@@ -1,0 +1,29 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# Visual Studio / Rider / JetBrains IDE files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+
+# Rider specific
+*.iml
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet package folders
+*.nupkg
+*.snupkg
+packages/
+# Ignore NuGet config if not meant to be shared
+# nuget.config
+
+# ASP.NET / Web specific
+appsettings.*.json # optional: ignore secr*

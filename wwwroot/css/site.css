@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* light gray background */
+    color: #333;
+}
+
+/* Centered container */
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Button style */
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff5e3a; /* soft orange/red */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #ff3b1a;
+    transform: translateY(-2px);
+}
+
+/* File input container */
+.file-upload {
+    margin: 20px 0;
+}
+
+.file-upload input[type="file"] {
+    display: none; /* hide default input */
+}
+
+.file-upload label {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #28a745, #007bff); /* green to blue 45° */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.file-upload label:hover {
+    /* Slightly shift gradient on hover for effect */
+    background: linear-gradient(45deg, #20c851, #339cff);
+    transform: translateY(-2px);
+}
+
+/* Small helper text */
+.helper-text {
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .container {
+        margin: 40px 20px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.footer {
+    text-align: center;       
+    margin-top: 50px;        
+    padding: 15px 0;         
+    color: #888;           
+    font-size: 0.9rem;     
+}

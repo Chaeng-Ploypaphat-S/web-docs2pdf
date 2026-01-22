@@ -1,0 +1,14 @@
+@page "/docs2pdf"
+@model web_docs2pdf.Pages.Docs2PdfModel
+@{
+    Layout = "_Layout";
+}
+
+<h1>Convert Word to PDF</h1>
+<p>Upload your Word document and get a PDF instantly.</p>
+<div class="file-upload">
+    <input type="file" id="fileInput" />
+    <label for="fileInput">Choose File</label>
+    <div class="helper-text">Max file size 50MB</div>
+</div>
+<a href="#" class="button">Convert to PDF</a>
